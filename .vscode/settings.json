@@ -2,19 +2,19 @@
   "sqltools.connections": [
     {
       "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "${workspaceFolder:SQL}/sqliteDbs/init.db",
+      "name": "initVenus"
+    },
+    {
+      "previewLimit": 50,
       "server": "db.pssbujkmzspdgqugjdzv.supabase.co",
       "port": 5432,
       "driver": "PostgreSQL",
       "name": "venus",
       "username": "postgres",
       "database": "postgres",
-      "password": "qXmKimhmT6YDnnSe"
-    },
-    {
-      "previewLimit": 50,
-      "driver": "SQLite",
-      "database": "${workspaceFolder:SQL}/sqliteDbs/init.db",
-      "name": "initVenus"
+      "password": "3jGSjyNnunEOPP5P"
     }
   ]
 }

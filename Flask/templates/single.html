@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='bootstrap.css')}}"
+    />
+  </head>
+  <body>
+    <h1>Display Single Puppy</h1>
+
+    <div>
+      <div class="card" style="width: 18rem">
+        <img class="card-img-top" src="{{puppy['pic']}}" alt="Card image cap" />
+        <div class="card-body">
+          <p class="card-text">{{puppy['name']}}</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn btn-primary btn-lg" href="{{url_for('index')}}">To Home</a>
+
+    <script src="{{url_for('static',filename='js/index.js')}}"></script>
+  </body>
+</html>
